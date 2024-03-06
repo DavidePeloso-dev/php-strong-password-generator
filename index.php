@@ -1,9 +1,9 @@
 <?php
-$pwLen = $_GET['lenght'];
-
 include __DIR__ . '/function.php';
 
+$pwLen = $_GET['lenght'];
 $password = pwGenerator($pwLen);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
