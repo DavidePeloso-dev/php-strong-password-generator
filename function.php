@@ -1,7 +1,7 @@
 <?php
 function pwGenerator($len)
 {
-    if ($len <= 40) {
+    if ($len <= 40 && $len >= 8) {
         $componets = [
             'abcdefghijklmnopqrstuvwxyz',
             'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
@@ -20,6 +20,6 @@ function pwGenerator($len)
         }
         return $pw;
     } else {
-        return 'You must digit a number lower or equal to 40';
+        return 'You must digit a number lower or equal to 40 and at least greater or equal to 8';
     }
 }
